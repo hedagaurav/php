@@ -1,0 +1,157 @@
+/*
+
+    header html css
+    
+	.nav {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.brand {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.brand p{
+		padding: 0;
+		margin: 0;
+		font-size: 1.5em;
+	}
+
+	.navbar {
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+		
+	}
+
+	.menu h3{
+		margin: .5em;
+		font-size: 1em;
+	}
+
+	#login {
+		margin: auto;
+	}
+
+	#login button {
+		padding: 10px 5px;
+		font-weight: bold;
+		border-radius: 10px;
+		background-color: white;
+		color: green;
+		border: 2px solid green;
+	}
+
+	#login span {
+		font-size: 16px;
+	}
+
+	#login button:hover {
+		color: black;
+		background-color: limegreen;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.menu {
+		display: grid;
+		grid-auto-columns: 1fr;
+		text-align: center;
+	}
+
+	.menu h3:hover {
+		background-color: orange;
+	}
+	*/
+
+index.css
+
+	body {
+		background-color: lightgoldenrodyellow;
+	}
+	
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		/*background-color: beige;*/
+		/*border: 1px dashed maroon;*/
+	}
+	
+	.container a {
+		text-decoration: none;
+	}
+	
+	/*header*/
+	
+	.brand, .navbar, .user {
+		border: 1px solid blue;
+	}
+	
+	/*main content*/
+	
+	.main_content {
+		border: 2px solid green;
+	}
+	
+	.jumbotron_frame {
+		/*border: 2px solid blue;*/
+		height: 450px;
+		width: auto;
+	}
+	
+	.jumbotron_frame img {
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	/* section 1 */
+	
+	#section1 {
+		border: 1px solid orange;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.article {
+		border: 1px solid green;
+		width: 24%;
+	}
+	
+	/* Footer Styling */
+	
+	.footer {
+		border: 1px solid blue;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	/*for min width: size is small to big means mobile first(mobile tablet desktop) and
+	for max width: size is big to small means desktop first(desktop tablet mobile) and 
+	last rule always applies*/
+	
+	@media screen and (max-width: 1024px) {
+		.container {
+			background-color: pink;
+		}
+		.brand, .navbar, .user {
+			border: 1px solid black;
+		}
+	}
+
+
+
+	index.html
+
+	<div class="user">
+                <div id="login">
+                    <button type="button">
+                        <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                        Sign In | Sign Up
+                    </button>
+                </div>
+
+            </div>
