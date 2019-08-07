@@ -3,12 +3,11 @@
 <head>
 	<title>Feedback</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<?php include 'head.html'; ?>
 	
 </head>
 <body>
 <div class="container">
-	<?php include "header.php" ?>
+	<?php include "header.html" ?>
 	<div class="main_content">
 		<h3>feedback form</h3>
 	</div>

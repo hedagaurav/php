@@ -14,8 +14,11 @@
 
     <!-- Lappy CSS -->
     <link rel="stylesheet" href="index.css" media="screen and (min-width:768px) and (max-width:1920px)">
+
     
-    
+    <!-- <link rel="stylesheet" href="index-lappy.css" media="screen and (min-width:768px) and (max-width:1920px)"> -->
+
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- jquery ui -->
@@ -52,23 +55,7 @@
         </div>
 
         <!-- header -->
-        <header id="header" class="header">
-            <div class="brand">
-                <h3>this is brand / icon</h3>
-            </div>
-            <a id="sandwich" class="bars">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </a>
-            <div class="navbar" id="navbar">
-                <div class="menu">
-                    <h3><a href="index.php">Home</a></h3>
-                    <h3><a href="menu.php">Menu</a></h3>
-                    <h3><a href="about.php">About Us</a></h3>
-                    <h3><a href="blog.php">Blog</a></h3>
-                    <h3><a href="feedback.php">Feedback</a></h3>
-                </div>
-            </div>
-        </header>
+        <?php include 'header.html';?>
 
         <!-- jumbotron -->
         <div class="jumbotron" id="jumbotron">
@@ -82,6 +69,7 @@
         <div class="main_content">
             <!-- #section 1 -->
             <!-- <p>width of section1 : <span id="section1_width"></span></p> -->
+            
             <div class="section" id="section1">
                 <div class="article">
                     <h3>article 1</h3>

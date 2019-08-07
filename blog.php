@@ -39,7 +39,7 @@
 </head>
 <body>
 	<div class="container">
-		<?php include "header.php"; ?>
+		<?php include "header.html"; ?>
 		<div class="main_content">
 			<h3>Blog Page Here</h3>
 			<div id="image">
