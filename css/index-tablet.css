@@ -1,0 +1,56 @@
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body{
+        margin: 0;
+    }
+    
+    .container {
+        width: 100%;
+        background-color: lightcoral;
+    }
+
+
+    /* jumbotron mobile*/
+
+.jumbotron_frame {
+    width: auto;
+    height: 250px;
+}
+
+.jumbotron_frame img {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* section 1 mobile*/
+
+#section1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-auto-rows: auto; */
+    grid-gap: 1em;
+}
+
+.article {
+    text-align: center;
+}
+
+.article .content {
+    padding: 0 20px;
+    text-align: justify;
+}
+
+/* footer */
+
+.footer {
+    /* border: 1px solid orange; */
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-row-gap: 0.5em;
+}
+
+.footer-wrap>* {
+    margin: 0;
+}
+}
