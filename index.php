@@ -15,7 +15,7 @@
     <!-- Lappy CSS -->
     <link rel="stylesheet" href="index.css" media="screen and (min-width:768px) and (max-width:1920px)">
 
-    
+
     <!-- <link rel="stylesheet" href="index-lappy.css" media="screen and (min-width:768px) and (max-width:1920px)"> -->
 
 
@@ -69,7 +69,7 @@
         <div class="main_content">
             <!-- #section 1 -->
             <!-- <p>width of section1 : <span id="section1_width"></span></p> -->
-            
+
             <div class="section" id="section1">
                 <div class="article">
                     <h3>article 1</h3>
@@ -109,18 +109,8 @@
             </div>
         </div>
         <!-- footer -->
+        <?php include 'footer.php';?>
 
-        <footer class="footer">
-            <?php include 'social.html'; ?>
-            <div class="location">
-                <p>Meet us @ add your current addressand location here.</p>
-            </div>
-            <div class="footer-wrap">
-                <h3>Footer</h3>
-                <p>Created By Gaurav Heda.</p>
-            </div>
-
-        </footer>
         <!-- main content end -->
     </div>
 
