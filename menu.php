@@ -1,51 +1,46 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>About Us</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- user stylesheet -->
+        <?php require "header.html"; ?>
 
-    <!-- Mobile CSS -->
-    <link rel="stylesheet" href="./css/index-mobile.css" media="screen and (max-width:768px)">
-
-    <!-- Tablet CSS -->
-    <!-- <link rel="stylesheet" href="./css/index-tablet.css" media="screen and (min-width:768px) and (max-width:1024px)"> -->
-
-    <!-- Lappy CSS -->
-    <link rel="stylesheet" href="index.css" media="screen and (min-width:768px) and (max-width:1920px)">
-
-
-    <!-- <link rel="stylesheet" href="index-lappy.css" media="screen and (min-width:768px) and (max-width:1920px)"> -->
-	
-	<!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- jquery ui -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- jquery theme -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- user javascript file -->
-    <script src=index.js></script>
-</head>
-
-<body>
-    <div class="container">
-        <?php include "header.html"; ?>
+        <!-- Main Content Start -->
         <div class="main_content">
-
-            <h3>Menu</h3>
-            <div id="pizza">
-                <div id="pizza_image">
-                    <img src="" alt="pizza image">
-                </div>
-                <h4>pizza name</h4>
-                <p>pizza quantity</p>
+            <p>menu navigation</p>
+            <div>
+                <ul>
+                    <li>veg</li>
+                    <li>nonveg</li>
+                    <li>sides</li>
+                    <li>beverages</li>
+                    <li>Dessert</li>
+                </ul>
             </div>
+            <?php include "connection.php";?>
+            <h3>Menu</h3>
 
+            <!-- Veg Items -->
+
+            <?php 
+				$result = $conn->query("select * from user");
+                echo "no of rows in result table = ".$result->num_rows;
+                ?>
+            <div class="food-menu">
+                <?php
+				    for ($i=0; $i < 5; $i++) { 
+			    ?>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./media/images/journey.jpg" alt="pizza image">
+                    </div>
+                    <div class="card-content">
+                        <p class="card-title">pizza name</p>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <?php }?>
+            </div>
+            <!-- Non Veg Items -->
+            <!-- Main Content End -->
         </div>
+        <!-- Footer -->
         <?php include "footer.php"; ?>
     </div>
 </body>

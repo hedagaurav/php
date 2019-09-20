@@ -138,6 +138,7 @@ header {
 /* facebook icon/font size and padding set manually */
 
 #facebook {
-	padding: 1em 1.1em;
-	font-size: 0.9em;
+	/* border: 1px solid red; */
+	/* padding: 1em 2em; */
+	/* font-size: 0.9em; */
 }
