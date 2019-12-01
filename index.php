@@ -4,6 +4,7 @@
         <?php include 'header.html';?>
 
         <!-- jumbotron -->
+        <p>Live Server working is it or not yes hurray</p>
         <div class="jumbotron" id="jumbotron">
             <div class="jumbotron_frame">
                 <img src="media/images/journey.jpg" alt="journey">
@@ -20,7 +21,7 @@
                 <div class="article">
                     <h3>article 1</h3>
                     <p class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        this is not whst i thought Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
