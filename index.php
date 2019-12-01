@@ -4,7 +4,8 @@
         <?php include 'header.html';?>
 
         <!-- jumbotron -->
-        <p>Live Server working is it or not yes hurray</p>
+        <p>Live Server working is in chrome browser.</p>
+        <p>start live server in vs code, then in chrome and reload the localhost url tab in chrome browser.</p>
         <div class="jumbotron" id="jumbotron">
             <div class="jumbotron_frame">
                 <img src="media/images/journey.jpg" alt="journey">
