@@ -19,12 +19,12 @@
             <!-- Veg Items -->
 
             <?php 
-				$result = $conn->query("select * from user");
+				$result = $conn->query("select * from accounts");
                 echo "no of rows in result table = ".$result->num_rows;
                 ?>
             <div class="food-menu">
                 <?php
-				    for ($i=0; $i < 5; $i++) { 
+				    for ($i=0; $i < 4; $i++) { 
 			    ?>
                 <div class="card">
                     <div class="card-image">
