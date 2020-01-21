@@ -1,0 +1,34 @@
+idatabase structure--
+**************************
+
+order-table--
+id
+user-id
+order{
+    item-id,qty
+}
+address{
+    location
+    landmark
+    city
+    pincode
+    state
+}
+***************************
+
+item-table--
+id
+name
+description
+amt
+category
+image-name
+***************************
+
+user-table--
+id
+name
+gender
+contact
+email
+***************************
