@@ -8,3 +8,7 @@
         <p>Created By Gaurav Heda.</p>
     </div>
 </footer>
+<!-- container closed -->
+</div>
+</body>
+</html>

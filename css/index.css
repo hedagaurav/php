@@ -1,0 +1,44 @@
+/* @media screen and (min-width:1024px) and (max-width:1920px) { */
+body {
+	margin: 0;
+}
+
+.container {
+	width: 90%;
+	margin: auto 5%;
+	background-color: lightblue;
+	transition: 0.3s;
+}
+
+
+/* jumbotron lappy outside main content*/
+
+.jumbotron_frame {
+	width: auto;
+	height: 500px;
+}
+
+.jumbotron_frame img {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Main Content */
+
+/* section 1 lappy*/
+
+#section1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 1em;
+}
+
+.article {
+	text-align: center;
+}
+
+.article .content {
+	padding: 0 20px;
+	text-align: justify;
+}

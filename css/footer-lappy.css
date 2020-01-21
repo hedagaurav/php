@@ -1,0 +1,53 @@
+/* Footer */
+
+.footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	text-align: center;
+}
+
+.footer>* {
+	border: 1px solid magenta;
+}
+
+.footer-wrap {
+	grid-column: 1/-1;
+	grid-row: 2;
+}
+
+/* social media icons styling */
+
+.social-media {
+	/* margin: 20px auto; */
+	/* border: 1px solid green; */
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 100px repeat(auto-fit, minmax(50px, 1fr));
+	align-items: center;
+	text-align: center;
+	min-width: 360px;
+}
+
+.social-media p {
+	font-size: 1em;
+}
+
+.social-media a {
+	text-decoration: none;
+	color: grey;
+	/* border: 1px solid black; */
+	border-radius: 50%;
+	padding: 0.6em 0.8em;
+	font-size: 1.2em;
+	transition: 0.5s;
+}
+
+/* facebook icon/font size and padding set manually */
+
+#facebook {
+	padding: 0.6em 0.9em;
+	/* font-size: 0.9em; */
+}
+

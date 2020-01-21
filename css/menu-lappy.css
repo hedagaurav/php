@@ -1,0 +1,100 @@
+/* menu.php */
+/* menu page lappy css */
+
+/* food menu Navigation */
+
+.nav_list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 5px;
+	column-gap: 5px;
+	margin: 0 10px;
+}
+
+.nav_item{
+	border: 1px solid red;
+	list-style: none;
+	text-align: center;
+	padding: 10px 0;
+}
+
+/* food items display*/
+.food-items {
+	display: grid;
+	/* grid-template-columns: repeat(3, 1fr); */
+	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+	grid-gap: 1em;
+	margin: 0 1em;
+	border: 2px dashed orchid;
+}
+
+.card {
+	background-color: white;
+	/*border: 2px solid red;*/
+}
+
+
+.card-image {
+	height: 250px;
+	width: auto;
+	box-sizing: border-box;
+	/* margin: 10px; */
+}
+
+.card-image img {
+	height: 100%;
+	width: 100%;
+}
+
+hr{
+	margin: 10px 10px 10px 10px;
+}
+
+.card-content {
+	/*border: 2px solid red;*/
+	/*margin-bottom: 5px;*/
+	padding-bottom: 10px;
+}
+
+.card-title {
+	margin: 10px;
+	/* border: 2px solid seagreen; */
+}
+.card-desc{
+	margin: 10px;
+}
+
+.quantity, .size, .price{
+	margin: 10px;
+	display: inline-block;
+	width: fit-content;
+}
+
+.quantity input{
+	text-align: center;
+	width: 30px;
+	/*width: 100%;*/
+
+}
+
+.price input{
+	text-align: center;
+	/*width: fit-content;*/
+}
+
+/* card content button*/
+.card-btn {
+	display: block;
+	text-decoration: none;
+	/*border: 1px solid black;*/
+	padding: 10px;
+	width: fit-content;
+	margin: 0 20px 0 auto;
+	border-radius: 5px;
+	/* text-align: right; */
+	/* margin: 1em 0; */
+}
+
+/*.card-btn*/

@@ -2,10 +2,11 @@
 
 
 function show_width() {
-    setInterval(function () {
-        document.getElementById("screen_width").innerHTML = screen.width;
+    if (document.title == 'Php Project') {
+        setInterval(function () {
+            document.getElementById("screen_width").innerHTML = screen.width;
+            var body_width = document.getElementById("body").offsetWidth;
 
-        var body_width = document.getElementById("body").offsetWidth;
         // alert(body_width);
         document.getElementById("body_width").innerHTML = body_width;
 
@@ -18,12 +19,26 @@ function show_width() {
 
         // var section1_width = document.getElementById("section1").offsetWidth;
         // document.getElementById("section1_width").innerHTML = section1_width;
-    }, 500);
+    }, 1000);
+    }else{
+        alert("page title is different.");
+    }
+}
+
+function sizechange(psize){
+
+    var size = psize;
+    var ip = $(".ss")
+    // var p = 0;
+    // p = document.getElementById('price').innerHTML;
+    alert(p);
+    
+    // $.post(size.php,{});
 }
 
 
-
 $(function () {
+
     var x = document.getElementById('sandwich');
     var i = document.getElementById('navbar');
     $('.bars').click(function () {
@@ -41,18 +56,19 @@ $(function () {
     });
 
     $('button').click(function() {
-        
+
     });
+    
+    if (document.title == 'Php Project') {
+        setInterval(function () {
+            document.getElementById("screen_width").innerHTML = screen.width;
+            var body_width = document.getElementById("body").offsetWidth;
+            document.getElementById("body_width").innerHTML = body_width;
 
-    setInterval(function () {
-        document.getElementById("screen_width").innerHTML = screen.width;
-        var body_width = document.getElementById("body").offsetWidth;
-        document.getElementById("body_width").innerHTML = body_width;
-
-        var container_width = document.getElementsByClassName("container")[0].offsetWidth;
-        document.getElementById("container_width").innerHTML = container_width;
-        var contm = body_width - container_width;
-        document.getElementById("contm").innerHTML = contm/2;
+            var container_width = document.getElementsByClassName("container")[0].offsetWidth;
+            document.getElementById("container_width").innerHTML = container_width;
+            var contm = body_width - container_width;
+            document.getElementById("contm").innerHTML = contm/2;
         // alert(contm);
 
         // var jumbo_width = document.getElementById("jumbotron").offsetWidth;
@@ -61,4 +77,5 @@ $(function () {
         // var section1_width = document.getElementById("section1").offsetWidth;
         // document.getElementById("section1_width").innerHTML = section1_width;
     }, 500);
+    }
 });

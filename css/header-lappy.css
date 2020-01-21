@@ -1,0 +1,68 @@
+/* #Header */
+header {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	/* grid-template-columns: autofit; */
+	padding: 0 20px;
+	text-align: center;
+	/* column-gap: 5px; */
+}
+
+.brand {
+	border: 1px solid green;
+}
+
+#sandwich {
+	display: none;
+}
+/* navbar (menu(home,about) + user(sign in))*/
+
+.navbar1 {
+	/* margin: 10px; */
+	/* padding: 10px 0; */
+	/* grid-column: span 1; */
+	/* to separate menu and user divs */
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	/* grid-template-columns: repeat(autofit); */
+	grid-template-rows: 1fr;
+}
+
+.navbar a{
+	text-decoration: none;
+}
+
+/* menu links for lappy (home,menu,about)*/
+.menu {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-rows: 1fr;
+	align-items: center;
+	text-align: center;
+	border: 1px solid salmon;
+	column-gap: 10px;
+	/* margin: 0 5px; */
+}
+
+.menu a {
+	text-decoration: none;
+	background-color: pink;
+	color: black;
+	/* padding: 0.5em 0.2em; */
+	/* font-weight: bold; */
+	font-size: 1.2em;
+	transition: 0.3s;
+}
+
+.menu a:hover {
+	background-color: salmon;
+}
+
+.user{
+	border: 1px solid salmon;
+	text-align: center;
+}
+
+.user a:hover{
+	text-decoration: underline;	
+}
